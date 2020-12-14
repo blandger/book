@@ -1,8 +1,15 @@
 [book]
 title = "The Rust Programming Language"
+description = ""
 author = "Steve Klabnik and Carol Nichols, with Contributions from the Rust Community"
+language = "en"
+version = "0.0.1"
 
 [output.html]
 additional-css = ["ferris.css", "theme/2018-edition.css"]
 additional-js = ["ferris.js"]
 git-repository-url = "https://github.com/rust-lang/book"
+
+[output.epub]
+#cover-image = "img/book_cover.jpg"
+additional-resources = ["img/ferris/does_not_compile.svg","img/ferris/not_desired_behavior.svg","img/ferris/panics.svg","img/ferris/unsafe.svg","img/trpl04-01.svg","img/trpl04-02.svg","img/trpl04-03.svg","img/trpl04-04.svg","img/trpl04-05.svg","img/trpl04-06.svg","img/trpl14-01.png","img/trpl14-02.png","img/trpl14-03.png","img/trpl14-04.png","img/trpl15-01.svg","img/trpl15-02.svg","img/trpl15-03.svg","img/trpl15-04.svg"]

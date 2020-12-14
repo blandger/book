@@ -1,7 +1,17 @@
 [book]
 title = "The Rust Programming Language"
+description = "Русская версия перевода (TRPL) Rust-бук"
 author = "Steve Klabnik and Carol Nichols, with Contributions from the Rust Community"
+language = "ru"
+version = "0.0.1"
+
+[rust]
+edition = "2018"
 
 [output.html]
 additional-css = ["ferris.css", "theme/2018-edition.css"]
 additional-js = ["ferris.js"]
+
+[output.epub]
+cover-image = "img/book_cover.jpg"
+additional-resources = ["img/ferris/does_not_compile.svg","img/ferris/not_desired_behavior.svg","img/ferris/panics.svg","img/ferris/unsafe.svg","img/trpl04-01.svg","img/trpl04-02.svg","img/trpl04-03.svg","img/trpl04-04.svg","img/trpl04-05.svg","img/trpl04-06.svg","img/trpl14-01.png","img/trpl14-02.png","img/trpl14-03.png","img/trpl14-04.png","img/trpl14-05.png","img/trpl14-07.png","img/trpl14-10.png","img/trpl15-01.svg","img/trpl15-02.svg","img/trpl15-03.svg","img/trpl15-04.svg"]
