@@ -188,9 +188,9 @@ guess`.
 [read_line]: ../std/io/struct.Stdin.html#method.read_line
 
 The job of `read_line` is to take whatever the user types into standard input
-and place that into a string, so it takes that string as an argument. The
-string argument needs to be mutable so the method can change the string’s
-content by adding the user input.
+and append that into a string (without overwriting its contents), so it takes
+that string as an argument. The string argument needs to be mutable so the
+method can change the string’s content by adding the user input.
 
 The `&` indicates that this argument is a *reference*, which gives you a way to
 let multiple parts of your code access one piece of data without needing to
@@ -397,7 +397,8 @@ $ cargo build
 adding the rand crate as a dependency</span>
 
 You may see different version numbers (but they will all be compatible with
-the code, thanks to SemVer!), different lines (depending on the operating system), and the lines may be in a different order.
+the code, thanks to SemVer!), different lines (depending on the operating
+system), and the lines may be in a different order.
 
 Now that we have an external dependency, Cargo fetches the latest versions of
 everything from the *registry*, which is a copy of data from
